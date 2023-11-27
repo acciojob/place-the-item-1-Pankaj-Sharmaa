@@ -1,34 +1,12 @@
-/* Apply a reset to remove default margin and padding on elements */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.item{
+	height:100px;
+	width:100px;
+	background-color:green;
+	border:2px solid black;
 }
 
-/* Create a flex container for the items */
-.holder {
-    display: flex;
-    flex-wrap: wrap; /* Allow items to wrap to the next row */
-    justify-content: space-between; /* Distribute space between items */
-    padding: 10px; /* Optional padding to push items away from the edges */
-}
-
-/* Style for each item within the container */
-.item {
-    flex: 0 0 calc(33.33% - 10px); /* Distribute items equally with spacing */
-    background-color: #3498db; /* Example background color */
-    color: #ffffff; /* Example text color */
-    text-align: center;
-    padding: 10px;
-    margin-bottom: 10px; /* Add space between items */
-    border: 2px solid #2980b9; /* Add a border for illustration */
-}
-
-/* Style for the first and last items to touch the edges */
-.item:first-child {
-    margin-left: 0;
-}
-
-.item:last-child {
-    margin-right: 0;
+.holder{
+	display:flex;
+	justify-content:space-between;
+	flex-wrap:wrap;
 }
